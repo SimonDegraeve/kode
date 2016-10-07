@@ -71,9 +71,11 @@ export default async function runCommand(commandKey, inputs = [], options = {}) 
     return sequence;
   }
 
-  return exec(
-    command.bin,
-    [...[...command.options, ...toArgs(options)], ...[...command.inputs, ...inputs]],
-    { stdio: 'inherit', env: { FORCE_COLOR: 'true' } }
-  );
+  const mergedInputs = [...command.inputs, ...inputs];
+  const mergedOptions = [...command.options, ...toArgs(options)];
+
+  return exec(command.bin, [...mergedOptions, ...mergedInputs], {
+    stdio: 'inherit',
+    env: { ...process.env, FORCE_COLOR: 'true' },
+  });
 }
