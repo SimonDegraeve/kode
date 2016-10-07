@@ -16,9 +16,9 @@ const COMMANDS = {
   },
 
   test: {
-    bin: 'eslint',
-    options: [],
-    inputs: ['src'],
+    bin: 'jest',
+    options: ['--config', '.jestrc', '--coverage'],
+    inputs: [],
   },
 
   clean: {
@@ -56,7 +56,7 @@ const COMMANDS = {
 /**
  *
  */
-export default async function runCommand(commandKey, inputs = [], options = []) {
+export default async function runCommand(commandKey, inputs = [], options = {}) {
   const command = COMMANDS[commandKey];
 
   if (!command) {
@@ -64,15 +64,16 @@ export default async function runCommand(commandKey, inputs = [], options = []) 
   }
 
   if (Array.isArray(command.bin)) {
+    let sequence = Promise.resolve();
     for (const subCommand of command.bin) {
-      await runCommand(subCommand);
+      sequence = sequence.then(() => runCommand(subCommand));
     }
+    return sequence;
   }
-  else {
-    await exec.stdout(
-      command.bin,
-      [...[...command.options, ...toArgs(options)], ...[...command.inputs, ...inputs]],
-      { env: { FORCE_COLOR: 'true' } }
-    );
-  }
+
+  return exec(
+    command.bin,
+    [...[...command.options, ...toArgs(options)], ...[...command.inputs, ...inputs]],
+    { stdio: 'inherit', env: { FORCE_COLOR: 'true' } }
+  );
 }

@@ -33,12 +33,9 @@ async function runProgram() {
     await runCommand(commandKey, inputs, cli.flags);
   }
   catch (error) {
-    console.log(error.stdout || error.stderr || error.message);  // eslint-disable-line no-console
     process.exit(1);
   }
 }
-
-console.log(cli);
 
 
 /**
