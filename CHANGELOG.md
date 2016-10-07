@@ -1,3 +1,9 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/simondegraeve/kode/compare/v2.0.0...v2.0.1)
+> 2016-10-07
+
+* [a97842e](https://github.com/simondegraeve/kode/commit/a97842e) **Bugfix:** Pass environment variables to child process
+
 <a name="2.0.0"></a>
 ## [2.0.0](https://github.com/simondegraeve/kode/compare/v1.0.0...v2.0.0)
 > 2016-10-07
