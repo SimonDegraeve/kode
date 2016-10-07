@@ -22,17 +22,21 @@
     "release": "terbit --changelog-preset saya"
   },
   "dependencies": {
+    "dargs": "^5.1.0",
+    "execa": "^0.5.0",
+    "meow": "^3.7.0",
+    "runtime-nodent": "github:simondegraeve/runtime-nodent"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-jest": "^16.0.0",
-    "babel-preset-saya": "*",
+    "babel-preset-saya": "^5.0.0",
     "codecov": "^1.0.1",
-    "conventional-changelog-saya": "*",
+    "conventional-changelog-saya": "^1.0.0",
     "eslint": "^3.6.1",
-    "eslint-config-saya": "*",
+    "eslint-config-saya": "^5.0.0",
     "jest": "^16.0.1",
     "rimraf": "^2.5.4",
-    "terbit": "*"
+    "terbit": "^1.0.0"
   }
 }
