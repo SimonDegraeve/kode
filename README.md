@@ -19,7 +19,19 @@ npm install kode
 
 ## Documentation
 
+```
+$ terbit --help
 
+  Usage
+    $ kode <command> <options>
+
+    Command can be:
+      lint | test | clean | transpile | build | release | report-coverage
+
+  Examples
+    $ kode lint
+    $ kode test --watch
+```
 
 
 [npm-img]: https://img.shields.io/npm/v/kode.svg?style=flat-square
