@@ -13,13 +13,10 @@ import runCommand from './index';
  */
 const cli = createCli(`
   Usage
-    $ kode <command>
+    $ kode <command> <options>
 
-    Version can be:
-      patch | minor | major | prepatch | preminor | premajor | prerelease | 1.2.3
-
-  Options
-
+    Command can be:
+      lint | test | clean | transpile | build | release | report-coverage
 
   Examples
     $ kode lint
@@ -40,6 +37,8 @@ async function runProgram() {
     process.exit(1);
   }
 }
+
+console.log(cli);
 
 
 /**
