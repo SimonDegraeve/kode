@@ -1,0 +1,38 @@
+{
+  "name": "kode",
+  "version": "0.0.0",
+  "description": "An opinionated tool suite for developing JavaScript modules",
+  "license": "MIT",
+  "author": "Simon Degrave <simon.degraeve@gmail.com>",
+  "repository": "github:SimonDegraeve/kode",
+  "homepage": "https://github.com/SimonDegraeve/kode#readme",
+  "bugs": "https://github.com/SimonDegraeve/kode/issues",
+  "main": "lib/index.js",
+  "bin": "lib/cli.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint src",
+    "test": "jest --config .jestrc --coverage",
+    "clean": "rimraf lib",
+    "transpile": "babel --copy-files --out-dir lib --ignore *.test.js,__*__ src",
+    "build": "npm run clean && npm run transpile",
+    "report-coverage": "codecov",
+    "release": "terbit --changelog-preset saya"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-jest": "^16.0.0",
+    "babel-preset-saya": "*",
+    "codecov": "^1.0.1",
+    "conventional-changelog-saya": "*",
+    "eslint": "^3.6.1",
+    "eslint-config-saya": "*",
+    "jest": "^16.0.1",
+    "rimraf": "^2.5.4",
+    "terbit": "*"
+  }
+}
