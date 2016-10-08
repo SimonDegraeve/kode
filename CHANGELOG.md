@@ -1,3 +1,9 @@
+<a name="2.1.0"></a>
+## [2.1.0](https://github.com/simondegraeve/kode/compare/v2.0.3...v2.1.0)
+> 2016-10-08
+
+* [70b3892](https://github.com/simondegraeve/kode/commit/70b3892) **Bugfix:** Re-publish to NPM
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/simondegraeve/kode/compare/v2.0.2...v2.0.3)
 > 2016-10-08
