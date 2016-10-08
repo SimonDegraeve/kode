@@ -1,3 +1,9 @@
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/simondegraeve/kode/compare/v2.0.1...v2.0.2)
+> 2016-10-08
+
+* [9df36e9](https://github.com/simondegraeve/kode/commit/9df36e9) **Dependency:** Use runtime-nodent v3.0.0
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/simondegraeve/kode/compare/v2.0.0...v2.0.1)
 > 2016-10-07
