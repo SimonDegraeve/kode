@@ -34,7 +34,7 @@
     "jest": "^16.0.1",
     "meow": "^3.7.0",
     "rimraf": "^2.5.4",
-    "runtime-nodent": "github:simondegraeve/runtime-nodent",
+    "runtime-nodent": "github:simondegraeve/runtime-nodent#v3.0.0",
     "terbit": "^1.0.0"
   },
   "devDependencies": {
