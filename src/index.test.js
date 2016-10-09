@@ -2,7 +2,6 @@
  *
  */
 jest.mock('execa', () => exec);
-
 import exec from 'execa-jest-mock';
 import runCommand from './';
 
@@ -17,9 +16,9 @@ describe('CommandRunner', () => {
     try {
       await runCommand();
     }
-  catch (error) {
-    expect(error.message).toMatch(/Command should be one of/);
-  }
+    catch (error) {
+      expect(error.message).toMatch(/Command should be one of/);
+    }
   });
 
   it('runs a valid command', async () => {
