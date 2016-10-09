@@ -1,3 +1,9 @@
+<a name="2.3.0"></a>
+## [2.3.0](https://github.com/simondegraeve/kode/compare/v2.2.1...v2.3.0)
+> 2016-10-09
+
+* [ad68269](https://github.com/simondegraeve/kode/commit/ad68269) **Feature:** Add support for environment variables
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/simondegraeve/kode/compare/v2.2.0...v2.2.1)
 > 2016-10-09
