@@ -1,3 +1,9 @@
+<a name="2.2.1"></a>
+## [2.2.1](https://github.com/simondegraeve/kode/compare/v2.2.0...v2.2.1)
+> 2016-10-09
+
+* [ac3a778](https://github.com/simondegraeve/kode/commit/ac3a778) **Bugfix:** Fix broken travis build
+
 <a name="2.2.0"></a>
 ## [2.2.0](https://github.com/simondegraeve/kode/compare/v2.1.1...v2.2.0)
 > 2016-10-09
