@@ -50,6 +50,12 @@ const COMMANDS = {
     options: [],
     inputs: [],
   },
+
+  changelog: {
+    bin: 'conventional-changelog',
+    options: ['--infile', 'CHANGELOG.md', '--same-file', '--preset', 'saya', '--release-count', 0],
+    inputs: [],
+  },
 };
 
 

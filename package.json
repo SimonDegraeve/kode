@@ -26,6 +26,7 @@
     "babel-jest": "^16.0.0",
     "babel-preset-saya": "^5.1.0",
     "codecov": "^1.0.1",
+    "conventional-changelog-cli": "^1.2.0",
     "conventional-changelog-saya": "^2.0.1",
     "dargs": "^5.1.0",
     "eslint": "^3.7.1",
