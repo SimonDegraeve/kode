@@ -1,87 +1,43 @@
 /**
  *
  */
-import exec from 'execa';
-import toArgs from 'dargs';
-
-
-/**
- *
- */
-const COMMANDS = {
+export default {
   lint: {
-    bin: 'eslint',
-    options: [],
+    cmd: 'eslint',
     inputs: ['src'],
   },
 
   test: {
-    bin: 'jest',
+    cmd: 'jest',
     options: ['--config', '.jestrc', '--coverage'],
-    inputs: [],
   },
 
   clean: {
-    bin: 'rimraf',
-    options: [],
+    cmd: 'rimraf',
     inputs: ['lib'],
   },
 
   transpile: {
-    bin: 'babel',
+    cmd: 'babel',
     options: ['--copy-files', '--out-dir', 'lib', '--ignore', '*.test.js,__*__'],
     inputs: ['src'],
   },
 
   build: {
-    bin: ['clean', 'transpile'],
-    options: [],
-    inputs: [],
+    cmd: ['clean', 'transpile'],
   },
 
   release: {
-    bin: 'terbit',
+    cmd: 'terbit',
     options: ['--changelog-preset', 'saya'],
-    inputs: [],
   },
 
   'report-coverage': {
-    bin: 'codecov',
-    options: [],
-    inputs: [],
+    cmd: 'codecov',
   },
 
   changelog: {
-    bin: 'conventional-changelog',
+    cmd: 'conventional-changelog',
     options: ['--infile', 'CHANGELOG.md', '--same-file', '--preset', 'saya', '--release-count', 0],
-    inputs: [],
   },
 };
-
-
-/**
- *
- */
-export default async function runCommand(commandKey, inputs = [], options = {}) {
-  const command = COMMANDS[commandKey];
-
-  if (!command) {
-    throw new Error(`Command should be one of ${Object.keys(COMMANDS).join(', ')}.`);
-  }
-
-  if (Array.isArray(command.bin)) {
-    let sequence = Promise.resolve();
-    for (const subCommand of command.bin) {
-      sequence = sequence.then(() => runCommand(subCommand));
-    }
-    return sequence;
-  }
-
-  const mergedInputs = [...command.inputs, ...inputs];
-  const mergedOptions = [...command.options, ...toArgs(options)];
-
-  return exec(command.bin, [...mergedOptions, ...mergedInputs], {
-    stdio: 'inherit',
-    env: { ...process.env, FORCE_COLOR: 'true' },
-  });
-}

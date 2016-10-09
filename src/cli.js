@@ -5,6 +5,7 @@
  *
  */
 import createCli from 'meow';
+import COMMANDS from './commands';
 import runCommand from './index';
 
 
@@ -16,7 +17,7 @@ const cli = createCli(`
     $ kode <command> <options>
 
     Command can be:
-      lint | test | clean | transpile | build | release | report-coverage
+      ${Object.keys(COMMANDS).join(' | ')}
 
   Examples
     $ kode lint
@@ -30,6 +31,7 @@ const cli = createCli(`
 async function runProgram() {
   try {
     const [commandKey, ...inputs] = cli.input;
+    if (!commandKey) cli.showHelp();
     await runCommand(commandKey, inputs, cli.flags);
   }
   catch (error) {

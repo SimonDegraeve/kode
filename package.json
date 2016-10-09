@@ -46,6 +46,7 @@
     "conventional-changelog-saya": "^2.0.1",
     "eslint": "^3.7.1",
     "eslint-config-saya": "^5.0.0",
+    "execa-jest-mock": "^0.5.0",
     "jest": "^16.0.1",
     "rimraf": "^2.5.4",
     "terbit": "^1.0.2"

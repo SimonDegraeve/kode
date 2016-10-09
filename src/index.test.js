@@ -1,8 +1,10 @@
 /**
  *
  */
-import exec from 'execa';
-import runCommand from '../commands';
+jest.mock('execa', () => exec);
+
+import exec from 'execa-jest-mock';
+import runCommand from './';
 
 
 /**
@@ -15,16 +17,15 @@ describe('CommandRunner', () => {
     try {
       await runCommand();
     }
-    catch (error) {
-      expect(error.message).toMatch(/Command should be one of/);
-    }
+  catch (error) {
+    expect(error.message).toMatch(/Command should be one of/);
+  }
   });
 
   it('runs a valid command', async () => {
-    await runCommand('lint');
+    await runCommand('test');
     expect(exec).toHaveBeenCalledTimes(1);
-    expect(exec.mock.calls[0]).toContain('eslint');
-    expect(exec.mock.calls[0]).toContainEqual(['src']);
+    expect(exec.mock.calls[0]).toContain('jest');
   });
 
   it('runs a bunch of subCommands', async () => {

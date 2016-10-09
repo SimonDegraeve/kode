@@ -26,7 +26,7 @@ $ terbit --help
     $ kode <command> <options>
 
     Command can be:
-      lint | test | clean | transpile | build | release | report-coverage
+      lint | test | clean | transpile | build | release | report-coverage | changelog
 
   Examples
     $ kode lint
