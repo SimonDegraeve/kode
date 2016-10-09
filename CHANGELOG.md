@@ -1,3 +1,12 @@
+<a name="2.2.0"></a>
+## [2.2.0](https://github.com/simondegraeve/kode/compare/v2.1.1...v2.2.0)
+> 2016-10-09
+
+* [a83d602](https://github.com/simondegraeve/kode/commit/a83d602) **Dependency:** Update babel-preset-saya
+* [4e7909c](https://github.com/simondegraeve/kode/commit/4e7909c) **Dependency:** Replace runtime-nodent with nodent-runtime
+* [336cee9](https://github.com/simondegraeve/kode/commit/336cee9) **Feature:** Add changelog command
+* [8097c72](https://github.com/simondegraeve/kode/commit/8097c72) **Tweak:** Re-organize files
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/simondegraeve/kode/compare/v2.1.0...v2.1.1)
 > 2016-10-08
