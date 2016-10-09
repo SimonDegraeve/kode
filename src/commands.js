@@ -1,10 +1,17 @@
 /**
  *
  */
+const BUILD_SRC = process.env.BUILD_SRC || 'src';
+const BUILD_DEST = process.env.BUILD_DEST || 'lib';
+
+
+/**
+ *
+ */
 export default {
   lint: {
     cmd: 'eslint',
-    inputs: ['src'],
+    inputs: [BUILD_SRC],
   },
 
   test: {
@@ -14,13 +21,13 @@ export default {
 
   clean: {
     cmd: 'rimraf',
-    inputs: ['lib'],
+    inputs: [BUILD_DEST],
   },
 
   transpile: {
     cmd: 'babel',
-    options: ['--copy-files', '--out-dir', 'lib', '--ignore', '*.test.js,__*__'],
-    inputs: ['src'],
+    options: ['--copy-files', '--out-dir', BUILD_DEST, '--ignore', '*.test.js,__*__'],
+    inputs: [BUILD_SRC],
   },
 
   build: {
