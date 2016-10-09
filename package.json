@@ -24,31 +24,31 @@
   "dependencies": {
     "babel-cli": "^6.16.0",
     "babel-jest": "^16.0.0",
-    "babel-preset-saya": "^5.1.0",
+    "babel-preset-saya": "^5.1.1",
     "codecov": "^1.0.1",
     "conventional-changelog-cli": "^1.2.0",
-    "conventional-changelog-saya": "^2.0.1",
+    "conventional-changelog-saya": "^2.0.2",
     "dargs": "^5.1.0",
     "eslint": "^3.7.1",
-    "eslint-config-saya": "^5.0.0",
+    "eslint-config-saya": "^5.0.1",
     "execa": "^0.5.0",
     "jest": "^16.0.1",
     "meow": "^3.7.0",
     "nodent-runtime": "^3.0.0",
     "rimraf": "^2.5.4",
-    "terbit": "^1.0.2"
+    "terbit": "^1.0.4"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-jest": "^16.0.0",
-    "babel-preset-saya": "^5.1.0",
+    "babel-preset-saya": "^5.1.1",
     "codecov": "^1.0.1",
-    "conventional-changelog-saya": "^2.0.1",
+    "conventional-changelog-saya": "^2.0.2",
     "eslint": "^3.7.1",
-    "eslint-config-saya": "^5.0.0",
+    "eslint-config-saya": "^5.0.1",
     "execa-jest-mock": "^0.5.0",
     "jest": "^16.0.1",
     "rimraf": "^2.5.4",
-    "terbit": "^1.0.2"
+    "terbit": "^1.0.4"
   }
 }
