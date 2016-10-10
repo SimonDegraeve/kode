@@ -8,16 +8,14 @@
 [![Dependency Status][gemnasium-img]][gemnasium-link]
 
 
-## Installation
-
-Using [npm](https://www.npmjs.com):
+## Install
 
 ```
-npm install kode
+$ npm install --global kode
 ```
 
 
-## Documentation
+## Usage
 
 ```
 $ kode --help
