@@ -1,3 +1,9 @@
+<a name="2.3.2"></a>
+## [2.3.2](https://github.com/simondegraeve/kode/compare/v2.3.1...v2.3.2)
+> 2016-10-10
+
+* [1ed2df3](https://github.com/simondegraeve/kode/commit/1ed2df3) **Dependency:** Update babel-preset-saya
+
 <a name="2.3.1"></a>
 ## [2.3.1](https://github.com/simondegraeve/kode/compare/v2.3.0...v2.3.1)
 > 2016-10-10
