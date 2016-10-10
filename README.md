@@ -1,11 +1,11 @@
 # kode
-An opinionated tool suite for developing JavaScript modules
+> An opinionated tool suite for developing JavaScript modules
 
 [![NPM Version][npm-img]][npm-link]
 [![Licence][licence-img]][licence-link]
 [![Build Status][travis-img]][travis-link]
 [![Coverage Status][codecov-img]][codecov-link]
-[![Dependency Status][david-img]][david-link]
+[![Dependency Status][gemnasium-img]][gemnasium-link]
 
 
 ## Installation
@@ -20,7 +20,7 @@ npm install kode
 ## Documentation
 
 ```
-$ terbit --help
+$ kode --help
 
   Usage
     $ kode <command> <options>
@@ -46,5 +46,5 @@ $ terbit --help
 [codecov-img]: https://img.shields.io/codecov/c/github/SimonDegraeve/kode/master.svg?style=flat-square
 [codecov-link]: https://codecov.io/github/SimonDegraeve/kode?branch=master
 
-[david-img]: https://img.shields.io/david/SimonDegraeve/kode.svg?style=flat-square
-[david-link]: https://david-dm.org/SimonDegraeve/kode
+[gemnasium-img]: https://img.shields.io/gemnasium/SimonDegraeve/kode.svg?style=flat-square
+[gemnasium-link]: https://gemnasium.com/github.com/SimonDegraeve/kode

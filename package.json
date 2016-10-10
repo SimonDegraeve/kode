@@ -18,7 +18,7 @@
     "clean": "rimraf lib",
     "transpile": "babel --copy-files --out-dir lib --ignore *.test.js,__*__ src",
     "build": "npm run clean && npm run transpile",
-    "report-coverage": "codecov",
+    "report-coverage": "codecov --file=node_modules/.coverage/lcov.info",
     "release": "terbit --changelog-preset saya"
   },
   "dependencies": {
@@ -52,6 +52,14 @@
     "jest-preset-saya": "^1.0.0",
     "rimraf": "^2.5.4",
     "terbit": "^1.0.4"
+  },
+  "babel": {
+    "presets": [
+      "saya"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "saya"
   },
   "jest": {
     "preset": "jest-preset-saya"
