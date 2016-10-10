@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "lint": "eslint src",
-    "test": "jest --config .jestrc --coverage",
+    "test": "jest --coverage",
     "clean": "rimraf lib",
     "transpile": "babel --copy-files --out-dir lib --ignore *.test.js,__*__ src",
     "build": "npm run clean && npm run transpile",
@@ -30,9 +30,10 @@
     "conventional-changelog-saya": "^2.0.2",
     "dargs": "^5.1.0",
     "eslint": "^3.7.1",
-    "eslint-config-saya": "^5.0.1",
+    "eslint-config-saya": "^5.0.2",
     "execa": "^0.5.0",
     "jest": "^16.0.1",
+    "jest-preset-saya": "^1.0.0",
     "meow": "^3.7.0",
     "nodent-runtime": "^3.0.0",
     "rimraf": "^2.5.4",
@@ -45,10 +46,14 @@
     "codecov": "^1.0.1",
     "conventional-changelog-saya": "^2.0.2",
     "eslint": "^3.7.1",
-    "eslint-config-saya": "^5.0.1",
+    "eslint-config-saya": "^5.0.2",
     "execa-jest-mock": "^0.5.0",
     "jest": "^16.0.1",
+    "jest-preset-saya": "^1.0.0",
     "rimraf": "^2.5.4",
     "terbit": "^1.0.4"
+  },
+  "jest": {
+    "preset": "jest-preset-saya"
   }
 }

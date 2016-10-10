@@ -16,7 +16,7 @@ export default {
 
   test: {
     cmd: 'jest',
-    options: ['--config', '.jestrc', '--coverage'],
+    options: ['--coverage'],
   },
 
   clean: {
@@ -40,7 +40,7 @@ export default {
   },
 
   'report-coverage': {
-    cmd: 'codecov',
+    cmd: 'codecov --file=node_modules/.coverage/lcov.info',
   },
 
   changelog: {
