@@ -1,3 +1,9 @@
+<a name="2.3.3"></a>
+## [2.3.3](https://github.com/simondegraeve/kode/compare/v2.3.2...v2.3.3)
+> 2016-10-11
+
+* [2009a65](https://github.com/simondegraeve/kode/commit/2009a65) **Tweak:** Update dependencies
+
 <a name="2.3.2"></a>
 ## [2.3.2](https://github.com/simondegraeve/kode/compare/v2.3.1...v2.3.2)
 > 2016-10-10
