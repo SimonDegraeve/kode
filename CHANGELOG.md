@@ -1,3 +1,9 @@
+<a name="2.4.5"></a>
+## [2.4.5](https://github.com/simondegraeve/kode/compare/v2.4.4...v2.4.5)
+> 2016-10-13
+
+* [e81b7bf](https://github.com/simondegraeve/kode/commit/e81b7bf) **Bugfix:** wrong bugs url
+
 <a name="2.4.4"></a>
 ## [2.4.4](https://github.com/simondegraeve/kode/compare/v2.4.3...v2.4.4)
 > 2016-10-13

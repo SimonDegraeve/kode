@@ -1,6 +1,6 @@
 {
   "name": "kode",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "description": "An opinionated tool suite for developing JavaScript modules",
   "license": "MIT",
   "author": "Simon Degrave <simon.degraeve@gmail.com>",
