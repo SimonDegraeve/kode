@@ -1,3 +1,9 @@
+<a name="2.4.2"></a>
+## [2.4.2](https://github.com/simondegraeve/kode/compare/v2.4.1...v2.4.2)
+> 2016-10-13
+
+* [3faeb88](https://github.com/simondegraeve/kode/commit/3faeb88) **Tweak:** Display cleaner error message
+
 <a name="2.4.0"></a>
 ## [2.4.0](https://github.com/simondegraeve/kode/compare/abdacf8...v2.4.0)
 > 2016-10-13
