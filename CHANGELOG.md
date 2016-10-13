@@ -1,3 +1,9 @@
+<a name="2.4.4"></a>
+## [2.4.4](https://github.com/simondegraeve/kode/compare/v2.4.3...v2.4.4)
+> 2016-10-13
+
+* [9ca325e](https://github.com/simondegraeve/kode/commit/9ca325e) **Bugfix:** Restore package.json
+
 <a name="2.4.2"></a>
 ## [2.4.2](https://github.com/simondegraeve/kode/compare/v2.4.1...v2.4.2)
 > 2016-10-13
