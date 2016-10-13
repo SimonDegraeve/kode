@@ -1,5 +1,5 @@
 <a name="2.4.0"></a>
-## 2.4.0
+## [2.4.0](https://github.com/simondegraeve/kode/compare/abdacf8...v2.4.0)
 > 2016-10-13
 
 * [4e7909c](https://github.com/simondegraeve/kode/commit/4e7909c) **Dependency:** Replace runtime-nodent with nodent-runtime

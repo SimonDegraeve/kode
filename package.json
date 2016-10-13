@@ -1,6 +1,6 @@
 {
   "name": "kode",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "An opinionated tool suite for developing JavaScript modules",
   "license": "MIT",
   "author": {
@@ -75,5 +75,5 @@
     "preset": "jest-preset-saya"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "kode@2.3.3"
+  "_id": "kode@2.4.0"
 }
