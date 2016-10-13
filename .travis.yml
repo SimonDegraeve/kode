@@ -5,6 +5,9 @@ cache:
     - node_modules
 notifications:
   email: false
+branches:
+  only:
+    - master
 node_js:
   - 'node'
 before_script:
@@ -14,6 +17,3 @@ script:
   - npm run test
 after_success:
   - npm run report-coverage
-branches:
-  only:
-    - master
