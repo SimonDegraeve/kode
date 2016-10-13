@@ -3,22 +3,12 @@
   "version": "2.4.3",
   "description": "An opinionated tool suite for developing JavaScript modules",
   "license": "MIT",
-  "author": {
-    "name": "Simon Degrave",
-    "email": "simon.degraeve@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/simondegraeve/kode.git"
-  },
+  "author": "Simon Degrave <simon.degraeve@gmail.com>",
+  "repository": "github:SimonDegraeve/kode",
   "homepage": "https://github.com/SimonDegraeve/kode#readme",
-  "bugs": {
-    "url": "https://github.com/SimonDegraeve/kode/issues"
-  },
+  "bugs": "https://github.com/SimonDegraeve/terbit/issues",
   "main": "lib/index.js",
-  "bin": {
-    "kode": "lib/cli.js"
-  },
+  "bin": "lib/cli.js",
   "files": [
     "lib"
   ],
@@ -37,7 +27,7 @@
     "babel-preset-saya": "^5.2.1",
     "codecov": "^1.0.1",
     "conventional-changelog-cli": "^1.2.0",
-    "conventional-changelog-saya": "^2.0.3",
+    "conventional-changelog-saya": "^2.0.4",
     "dargs": "^5.1.0",
     "eslint": "^3.7.1",
     "eslint-config-saya": "^5.0.4",
@@ -54,14 +44,14 @@
     "babel-jest": "^16.0.0",
     "babel-preset-saya": "^5.2.1",
     "codecov": "^1.0.1",
-    "conventional-changelog-saya": "^2.0.3",
+    "conventional-changelog-saya": "^2.0.4",
     "eslint": "^3.7.1",
     "eslint-config-saya": "^5.0.4",
     "execa-jest-mock": "^0.5.0",
     "jest": "^16.0.1",
     "jest-preset-saya": "^1.1.0",
     "rimraf": "^2.5.4",
-    "terbit": "^1.0.9"
+    "terbit": "^1.0.11"
   },
   "babel": {
     "presets": [
@@ -73,7 +63,5 @@
   },
   "jest": {
     "preset": "jest-preset-saya"
-  },
-  "readme": "ERROR: No README data found!",
-  "_id": "kode@2.4.2"
+  }
 }
