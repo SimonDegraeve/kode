@@ -22,7 +22,14 @@ const cli = createCli(`
   Examples
     $ kode lint
     $ kode test --watch
-`);
+`, {
+  boolean: [
+    'any-branch',
+    'skip-cleanup',
+    'skip-test',
+    'watch',
+  ],
+});
 
 
 /**
