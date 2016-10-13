@@ -1,14 +1,24 @@
 {
   "name": "kode",
-  "version": "2.3.3",
+  "version": "2.4.0",
   "description": "An opinionated tool suite for developing JavaScript modules",
   "license": "MIT",
-  "author": "Simon Degrave <simon.degraeve@gmail.com>",
-  "repository": "github:SimonDegraeve/kode",
+  "author": {
+    "name": "Simon Degrave",
+    "email": "simon.degraeve@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simondegraeve/kode.git"
+  },
   "homepage": "https://github.com/SimonDegraeve/kode#readme",
-  "bugs": "https://github.com/SimonDegraeve/kode/issues",
+  "bugs": {
+    "url": "https://github.com/SimonDegraeve/kode/issues"
+  },
   "main": "lib/index.js",
-  "bin": "lib/cli.js",
+  "bin": {
+    "kode": "lib/cli.js"
+  },
   "files": [
     "lib"
   ],
@@ -63,5 +73,7 @@
   },
   "jest": {
     "preset": "jest-preset-saya"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "kode@2.3.3"
 }
