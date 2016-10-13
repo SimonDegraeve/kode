@@ -6,7 +6,7 @@
   "author": "Simon Degrave <simon.degraeve@gmail.com>",
   "repository": "github:SimonDegraeve/kode",
   "homepage": "https://github.com/SimonDegraeve/kode#readme",
-  "bugs": "https://github.com/SimonDegraeve/terbit/issues",
+  "bugs": "https://github.com/SimonDegraeve/kode/issues",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
   "files": [
