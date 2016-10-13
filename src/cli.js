@@ -35,7 +35,6 @@ async function runProgram() {
     await runCommand(commandKey, inputs, cli.flags);
   }
   catch (error) {
-    console.log(`\n${error.message}`);
     process.exit(1);
   }
 }
