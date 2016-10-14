@@ -1,3 +1,9 @@
+<a name="2.4.6"></a>
+## [2.4.6](https://github.com/simondegraeve/kode/compare/v2.4.5...v2.4.6)
+> 2016-10-14
+
+* [aa0c6c5](https://github.com/simondegraeve/kode/commit/aa0c6c5) **Bugfix:** Fix failing report-coverage command
+
 <a name="2.4.5"></a>
 ## [2.4.5](https://github.com/simondegraeve/kode/compare/v2.4.4...v2.4.5)
 > 2016-10-13
