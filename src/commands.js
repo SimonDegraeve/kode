@@ -40,7 +40,8 @@ export default {
   },
 
   'report-coverage': {
-    cmd: 'codecov --file=node_modules/.coverage/lcov.info',
+    cmd: 'codecov',
+    options: ['--file=node_modules/.coverage/lcov.info'],
   },
 
   changelog: {
