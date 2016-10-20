@@ -1,3 +1,10 @@
+<a name="2.4.7"></a>
+## [2.4.7](https://github.com/simondegraeve/kode/compare/v2.4.6...v2.4.7)
+> 2016-10-20
+
+* [36efdf1](https://github.com/simondegraeve/kode/commit/36efdf1) **Dependency:** Update `eslint-config-saya`, `eslint` and `jest`
+* [8002604](https://github.com/simondegraeve/kode/commit/8002604) **Bugfix:** Use `require.resolve()` to find binaries
+
 <a name="2.4.6"></a>
 ## [2.4.6](https://github.com/simondegraeve/kode/compare/v2.4.5...v2.4.6)
 > 2016-10-14
