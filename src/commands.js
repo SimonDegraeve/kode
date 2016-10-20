@@ -10,22 +10,22 @@ const BUILD_DEST = process.env.BUILD_DEST || 'lib';
  */
 export default {
   lint: {
-    cmd: 'eslint',
+    cmd: require.resolve('.bin/eslint'),
     inputs: [BUILD_SRC],
   },
 
   test: {
-    cmd: 'jest',
+    cmd: require.resolve('.bin/jest'),
     options: ['--coverage'],
   },
 
   clean: {
-    cmd: 'rimraf',
+    cmd: require.resolve('.bin/rimraf'),
     inputs: [BUILD_DEST],
   },
 
   transpile: {
-    cmd: 'babel',
+    cmd: require.resolve('.bin/babel'),
     options: ['--copy-files', '--out-dir', BUILD_DEST, '--ignore', '*.test.js,__*__'],
     inputs: [BUILD_SRC],
   },
@@ -35,17 +35,17 @@ export default {
   },
 
   release: {
-    cmd: 'terbit',
+    cmd: require.resolve('.bin/terbit'),
     options: ['--changelog-preset', 'saya'],
   },
 
   'report-coverage': {
-    cmd: 'codecov',
+    cmd: require.resolve('.bin/codecov'),
     options: ['--file=node_modules/.coverage/lcov.info'],
   },
 
   changelog: {
-    cmd: 'conventional-changelog',
+    cmd: require.resolve('.bin/conventional-changelog'),
     options: ['--infile', 'CHANGELOG.md', '--same-file', '--preset', 'saya', '--release-count', 0],
   },
 };
