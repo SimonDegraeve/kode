@@ -18,9 +18,9 @@ export default async function runCommand(commandKey, inputs = [], options = {}) 
 
   if (Array.isArray(command.cmd)) {
     let sequence = Promise.resolve();
-    for (const subCommand of command.cmd) {
+    command.cmd.forEach(subCommand => {
       sequence = sequence.then(() => runCommand(subCommand));
-    }
+    });
     return sequence;
   }
 
