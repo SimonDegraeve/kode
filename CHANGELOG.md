@@ -1,3 +1,9 @@
+<a name="2.4.9"></a>
+## [2.4.9](https://github.com/simondegraeve/kode/compare/v2.4.8...v2.4.9)
+> 2016-11-10
+
+* [1df21d4](https://github.com/simondegraeve/kode/commit/1df21d4) **Tweak:** Update dependencies
+
 <a name="2.4.8"></a>
 ## [2.4.8](https://github.com/simondegraeve/kode/compare/v2.4.7...v2.4.8)
 > 2016-10-27
