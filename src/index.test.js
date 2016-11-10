@@ -10,7 +10,7 @@ import runCommand from './';
  *
  */
 describe('CommandRunner', () => {
-  afterEach(() => jest.clearAllMocks());
+  afterEach(() => jest.resetAllMocks());
 
   it('throws with invalid command', async () => {
     try {
