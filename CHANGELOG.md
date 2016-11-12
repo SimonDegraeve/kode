@@ -1,3 +1,9 @@
+<a name="2.4.10"></a>
+## [2.4.10](https://github.com/simondegraeve/kode/compare/v2.4.9...v2.4.10)
+> 2016-11-12
+
+* [1aacc64](https://github.com/simondegraeve/kode/commit/1aacc64) **Dependency:** Update eslint
+
 <a name="2.4.9"></a>
 ## [2.4.9](https://github.com/simondegraeve/kode/compare/v2.4.8...v2.4.9)
 > 2016-11-10
