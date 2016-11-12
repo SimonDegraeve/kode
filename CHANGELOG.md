@@ -1,3 +1,9 @@
+<a name="2.4.11"></a>
+## [2.4.11](https://github.com/simondegraeve/kode/compare/v2.4.10...v2.4.11)
+> 2016-11-12
+
+* [9dcbd5a](https://github.com/simondegraeve/kode/commit/9dcbd5a) **Dependency:** Update eslint-config-saya
+
 <a name="2.4.10"></a>
 ## [2.4.10](https://github.com/simondegraeve/kode/compare/v2.4.9...v2.4.10)
 > 2016-11-12
